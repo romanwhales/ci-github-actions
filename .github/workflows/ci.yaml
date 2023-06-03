@@ -7,13 +7,10 @@ jobs:
     # runs-on: windows-latest
 
     steps:
-      - run: node -v
       - name: Checkout code
         uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-        with :
-          node-version: "14.18.3"
-      - run: node -v
+      
       - name: Install packages
         run: npm ci
       - name: Run Eslint
