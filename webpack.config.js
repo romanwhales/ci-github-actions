@@ -1,5 +1,4 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack'); //to access built-in plugins
 
 module.exports = {
   module: {
