@@ -13,6 +13,7 @@ jobs:
       
       - name: Install packages
         run: npm ci
+        run: ls
       - name: Run Eslint
         run: npm run ci:lint
       - name: Run Tests
