@@ -12,8 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
       
       - name: Install packages
-        run: npm ci
-        run: ls
+        run: npm ci && ls
       - name: Run Eslint
         run: npm run ci:lint
       - name: Run Tests
