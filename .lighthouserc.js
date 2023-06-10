@@ -10,8 +10,9 @@ module.exports = {
       assert: {
         preset: "lighthouse:no-pwa",
         assertions: {
-            "csp-xss":"off",
-            "bf-cache":"off"
+            "csp-xss":"warn",
+            "bf-cache":"warn",
+            "categories:performance":["error",{minScore: 0.90}]
         }
       }
     },
